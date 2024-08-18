@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Convert Money - DevClub</title>
+</head>
+
+<body>
+
+    <img class="Wallpaper-mundo" src="./assets/Fondo exchange.jpg" alt="Wallpaper-mundo">
+    <img class="logo" src="./assets/logo-unscreen.gif" alt="logo-devclub-convert-money">
+    <img class="logo-devclub" src="./assets/DevClub.png" alt="logo-devclub">
+
+    <main>
+
+        <label>
+            Converter <b>de</b>
+            <select class="currency-select-convert">
+                <option value="reais-select">R$ Real Brasileiro</option>
+                <option value="dolar-select">USD$ Dólar Estadounidense</option>
+                <option value="euro-select">€ Euro</option>
+                <option value="libra-select">£ Libra</option>
+                <option value="bitcoin-select">BTC Bitcoin</option>
+            </select>
+        </label>
+
+        <label>
+            Converter <b>para</b>
+            <select class="currency-select-converted">
+                <option value="dolar-converted">USD$ Dólar Estadounidense</option>
+                <option value="euro-converted">€ Euro</option>
+                <option value="libra-converted">£ Libra</option>
+                <option value="bitcoin-converted">BTC Bitcoin</option>
+                <option value="reais-converted">R$ Real Brasileiro</option>
+            </select>
+        </label>
+
+        <label>
+            Valor
+            <input class="input-currency" placeholder="10.000,00">
+        </label>
+
+        <button class="convert-button">Converter</button>
+
+        <section>
+            <div class="currency-box">
+                <img class="currency-img-convert" src="./assets/real.png" alt="logo-moeda-a-converter">
+                <p class="currency-convert" id="currency-name1">Real</p>
+                <p class="currency-value-convert">R$ 0.0</p>
+            </div>
+
+            <img class="arrow-img" src="./assets/arrow.png" alt="seta">
+
+            <div class="currency-box">
+                <img class="currency-img-converted" src="./assets/us.png" alt="logo-moeda-convertida">
+                <p class="currency-converted" id="currency-name">Dólar</p>
+                <p class="currency-value-converted">$ 0.0</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+<script src="./scripts.js"></script>
+
+</html>
